@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat_Show</title>
+    <script>
+        function changeImage() {
+            var character = document.getElementById('character').value;
+            var image = document.getElementById('characterImage');
+            image.src = "Cat_image/"+character+".jpg";
+        }
+    </script>
+</head>
+<body>
+    <h2>Select Character</h2>
+
+    <select id="character" onchange="changeImage()">
+        <option value="garfield">Garfield</option>
+        <option value="odie">Odie</option>
+        <option value="nermal">Nermal</option>
+        <option value="pooky">Pooky</option>
+        <option value="jon">Jon</option>
+    </select>
+
+    <br><br>
+    <img id="characterImage" src="Cat_image/garfield.jpg" alt="Character Image" width="300">
+    
+    
+</body>
+</html>
